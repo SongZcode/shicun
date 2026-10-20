@@ -1,4 +1,4 @@
-# Emoje Tools for Android
+# Shicun (拾存)
 
 An on-device Douyin and Bilibili material downloader. Douyin Favorite Stickers and Saved/Liked Works have account collection screens with actual thumbnails, preview, selection, Save and Share. Bilibili supports BV/av/ep/ss/video/PGC/short links, official website login, part/episode/quality selection and local DASH muxing. Its account page provides favorite folders and recent likes, loading cover/title pages immediately; media details are fetched only when opened or saved. Static WebP/HEIC/AVIF sharing offers temporary compatible JPEG/PNG copies while retaining originals and motion. Sticker search is omitted. The app is in development; no released-version compatibility is required. Each platform keeps its own encrypted session. Downloads save directly to the system gallery or audio collection. See Status for device acceptance and remaining checks.
 
