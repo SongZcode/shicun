@@ -1,0 +1,15 @@
+{
+  "status_code":0,
+  "aweme_detail":{
+    "aweme_id":"1000000000000000002","desc":"Fixture image work",
+    "author":{"nickname":"Fixture author","sec_uid":"fixture-author"},"statistics":{"comment_count":114},
+    "images":[
+      {"uri":"fixture-image-1","width":1078,"height":1747,"url_list":["https://example.invalid/image1.png","https://mirror.invalid/image1.png"]},
+      {"uri":"fixture-image-2","width":1078,"height":1747,"url_list":["https://example.invalid/image2.png"]},
+      {"uri":"fixture-image-3","width":1080,"height":1920,"url_list":["https://example.invalid/image3.png"]},
+      {"uri":"fixture-image-4","width":1080,"height":1920,"url_list":["https://example.invalid/image4.png"]}
+    ],
+    "video":{"cover":{"url_list":["https://example.invalid/image1.png"]},"play_addr":{"url_list":["https://example.invalid/slideshow-preview.mp4"]}},
+    "music":{"id":1000000000000000099,"title":"Fixture platform music","play_url":{"url_list":["https://example.invalid/music.mp3"]}}
+  }
+}

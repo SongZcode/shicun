@@ -1,0 +1,14 @@
+{
+  "name": "emoje-tools-bundle",
+  "private": true,
+  "scripts": {
+    "bundle:js": "esbuild tools/sign/douyin.entry.js --bundle --platform=browser --target=es2019 --outfile=bundle_src/sign/douyin.js && esbuild tools/sign/bilibili.entry.js --bundle --platform=browser --target=es2019 --outfile=bundle_src/sign/bilibili.js",
+    "test:sign": "node --test tools/sign.test.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "js-md5": "0.8.3",
+    "lucide-static": "0.468.0",
+    "sm-crypto": "0.5.7"
+  }
+}

@@ -1,0 +1,48 @@
+{
+ "schema": 1,
+ "bundle_version": 23,
+ "min_app_version": 25,
+ "published_at": "2026-10-20T04:59:46Z",
+ "url": "https://raw.githubusercontent.com/UNCONFIGURED/emoje-tools/main/bundle/bundle_v23.zip",
+ "zip_sha256": "8e2a0ef8c3ea6bf3b7fea1983768df36d605fb996b692658e2c5764f5a2dc2ec",
+ "files_digest": "a605d866056e00fbb09ab7d3812ecff828af6722f27d666e0e5734a06530f495",
+ "files": [
+  {
+   "path": "parsers/bilibili.json",
+   "sha256": "7724ac893605e849e2e6c394e759d9cdbfd31348901216b4896ea36645732d1c",
+   "bytes": 1898
+  },
+  {
+   "path": "parsers/douyin.json",
+   "sha256": "1feac8b836bd1edc99d6f2ce0ec0dd628a8966b8fe5a4e5cebf7cea384d4f6b8",
+   "bytes": 3724
+  },
+  {
+   "path": "platforms/bilibili.json",
+   "sha256": "c455e8efc6105edccb18eb4ff8355dff04453ad51cc3fc3a6e5f2577fa01fa19",
+   "bytes": 2990
+  },
+  {
+   "path": "platforms/douyin.json",
+   "sha256": "5bd05c39aa49127850da28687c429bfbdc155bea0674041375fb2836d97dbe9a",
+   "bytes": 5900
+  },
+  {
+   "path": "sign/bilibili.js",
+   "sha256": "bd9724b23be038a343a8c254b4b6921fb8944ac5ec8ec1200aa0c2a410e011a7",
+   "bytes": 26673
+  },
+  {
+   "path": "sign/douyin.js",
+   "sha256": "721376bea49e16dd4fab59ad801320105bf3f3e05b1bb4520bb480173547a0f2",
+   "bytes": 39918
+  },
+  {
+   "path": "ui/douyin-login.js",
+   "sha256": "e540c4bbedea41ff43aa0940cd866c6df141c70ae0ba0e145b825b9524ea3f21",
+   "bytes": 5150
+  }
+ ],
+ "notes": "",
+ "sig_ed25519": "51pqdduSltq/qrL4AQcpTFc1whrtPuIhhxTgW1z2GXwpfZBxA4Fvn7JYNIpYiiWYKkBycZ3FkSPo1Hsae4lrCg=="
+}

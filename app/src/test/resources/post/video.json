@@ -1,0 +1,17 @@
+{
+  "status_code": 0,
+  "aweme_detail": {
+    "aweme_id": "1000000000000000001", "desc": "Fixture video", "create_time": 1792281600,
+    "author": {"nickname":"Fixture author","sec_uid":"fixture-author"}, "statistics":{"comment_count":151},
+    "video": {
+      "duration":3000,"width":160,"height":120,
+      "cover":{"url_list":["https://example.invalid/cover.png"]},
+      "bit_rate":[
+        {"gear_name":"fixture_low","bit_rate":50000,"is_h265":0,"play_addr":{"uri":"fixture-low","width":80,"height":60,"data_size":10000,"url_list":["https://example.invalid/low.mp4"]}},
+        {"gear_name":"fixture_high","bit_rate":200000,"is_h265":0,"play_addr":{"uri":"fixture-high","width":160,"height":120,"data_size":70000,"url_list":["https://example.invalid/high.mp4","https://mirror.invalid/high.mp4"]}},
+        {"gear_name":"fixture_middle","bit_rate":100000,"is_h265":0,"play_addr":{"uri":"fixture-middle","width":128,"height":96,"data_size":40000,"url_list":["https://example.invalid/middle.mp4"]}}
+      ]
+    },
+    "music":{"id_str":"1000000000000000099","title":"Fixture platform music","play_url":{"uri":"fixture-music","url_list":["https://example.invalid/music.mp3"]}}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "cid": "8000000000000000001",
+  "text": "Fixture media",
+  "reply_comment_total": 0,
+  "user": {"nickname": "Fixture User", "sec_uid": "fixture-user", "uid": "9007199254740993"},
+  "image_list": [
+    {
+      "origin_url": {"uri": "tos/image-live-1", "width": 1080, "height": 1208,
+        "url_list": ["https://p3.example.invalid/tos/image-live-1.webp?sc=image", "https://p9.example.invalid/tos/image-live-1.webp?sc=image"]},
+      "download_url": {"url_list": ["https://example.invalid/watermark.jpg"]},
+      "live_video": {"url_list": ["https://v3.example.invalid/motion-1.mp4", "https://v9.example.invalid/motion-1.mp4"], "duration": 2.795, "size": 41331}
+    },
+    {
+      "origin_url": {"uri": "tos/image-static-2", "width": 2160, "height": 2880,
+        "url_list": ["https://p3.example.invalid/tos/image-static-2.webp?sc=image"]},
+      "download_url": {"url_list": ["https://example.invalid/watermark-2.jpg"]}
+    }
+  ]
+}

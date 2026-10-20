@@ -1,0 +1,23 @@
+{
+  "post_id": "1000000000000000001",
+  "pages": {
+    "comment::0": {"comments": [
+      {"cid":"1000000000000000002","text":"fixture parent","reply_comment_total":2,
+       "user":{"nickname":"Fixture","sec_uid":"fixture-author"},
+       "sticker":{"id_str":"fixture-shared","animate_url":{"url_list":["https://example.invalid/shared.gif"]}}}
+    ],"cursor":39,"has_more":1,"total":4},
+    "comment::39": {"comments": [
+      {"cid":"1000000000000000002","text":"duplicate"},
+      {"cid":"1000000000000000003","text":"fixture top","reply_comment_total":0}
+    ],"cursor":81,"has_more":0,"total":4},
+    "reply:1000000000000000002:0": {"comments": [
+      {"cid":"1000000000000000004","text":"fixture reply","user":{"nickname":"Fixture","sec_uid":"fixture-author"},
+       "sticker":{"id_str":"fixture-shared","animate_url":{"url_list":["https://example.invalid/shared.gif"]}}}
+    ],"cursor":7,"has_more":1,"total":2},
+    "reply:1000000000000000002:7": {"comments": [
+      {"cid":"1000000000000000005","text":"fixture image","image_list":[
+        {"origin_url":{"uri":"fixture-image","url_list":["https://example.invalid/original.jpg"]},
+         "download_url":{"url_list":["https://example.invalid/watermarked.jpg"]}}]}
+    ],"cursor":15,"has_more":0,"total":2}
+  }
+}

@@ -1,0 +1,28 @@
+{
+ "schema": 1,
+ "bundle_version": 1,
+ "min_app_version": 1,
+ "published_at": "2026-10-18T02:52:17Z",
+ "url": "https://cdn.jsdelivr.net/gh/USER/REPO@main/bundle/bundle_v1.zip",
+ "zip_sha256": "a288ed15bb66e23e48330e88ba7b82b62473f7d0f5bfd9df7e82120e8337fd71",
+ "files_digest": "4062804aa1e74feec2cfddef4efce6267c813111bbf059b8162314f512b3a947",
+ "files": [
+  {
+   "path": "parsers/douyin.json",
+   "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+   "bytes": 187
+  },
+  {
+   "path": "platforms/douyin.json",
+   "sha256": "1bf927468aa9d04612e8e0561c70af451383268be4ca4916ee2b560586312a40",
+   "bytes": 275
+  },
+  {
+   "path": "sign/douyin.js",
+   "sha256": "059fe4079fa4b69683853117cd13f6ce57bd4ddd01a756e7929ca56e91b54cea",
+   "bytes": 69
+  }
+ ],
+ "notes": "",
+ "sig_ed25519": "Xak5eEX/1VNVfz5XjuAj9L37AH1Slzs4gHjHIv7ocjvtFKikzEs1kInOqSZdVNsCj3hcVaZYGP0bc4XRvn6QBQ=="
+}

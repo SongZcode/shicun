@@ -1,0 +1,67 @@
+{
+  "origin": "https://www.douyin.com",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+  "ua_metadata": {"brands":[{"brand":"Chromium","major":"139","full":"139.0.0.0"}],"full_version":"139.0.0.0","platform":"Windows","platform_version":"10.0.0","architecture":"x86","model":"","mobile":false,"bitness":64,"wow64":false},
+  "referer": "https://www.douyin.com/",
+  "accept": "application/json, text/plain, */*",
+  "login_url": "https://www.douyin.com/",
+  "cookie_origins": ["https://www.douyin.com/"],
+  "cookie_domains": [".douyin.com"],
+  "login_ui": {"script":"ui/douyin-login.js", "ready_timeout_ms":25000, "opening_poll_ms":200, "poll_ms":750},
+  "cookie_names": ["sessionid", "sessionid_ss", "sid_tt", "ttwid", "UIFID", "odin_tt", "s_v_web_id"],
+  "session_cookie_names": ["sessionid", "sessionid_ss", "sid_tt"],
+  "visitor_cookie_name": "UIFID",
+  "input": {
+    "url_regex": "https?://(?:v\\.douyin\\.com|(?:www\\.)?douyin\\.com)/[^\\s<>，。！？]+",
+    "id_regex": "^[0-9]{15,22}$",
+    "post_id_regex": "/(?:video|note|slides)/(\\d{15,22})",
+    "short_hosts": ["v.douyin.com"],
+    "allowed_hosts": ["v.douyin.com", "www.douyin.com", "douyin.com", "www.iesdouyin.com"],
+    "max_redirects": 5
+  },
+  "api": {
+    "savedWorks": {"path":"/aweme/v1/web/aweme/listcollection/", "method":"POST", "params":[["publish_video_strategy_type","2"]], "form":[["count","$count"],["cursor","$cursor"]], "headers":{"Referer":"https://www.douyin.com/user/self?from_tab_name=main&showTab=favorite_collection","Origin":"https://www.douyin.com","x-secsdk-csrf-token":"DOWNGRADE"}},
+    "likedWorks": {"path":"/aweme/v1/web/aweme/favorite/", "params":[["sec_user_id","$secUid"],["max_cursor","$cursor"],["count","$count"],["publish_video_strategy_type","2"]]},
+    "favorites": {"path":"/aweme/v1/web/im/resource/list/aggregation/", "params":[["app_id","1128"],["scenes","CUSTOM_STICKER_PAGE"],["custom_cursor","$cursor"],["custom_limit","$count"],["source","CUSTOM_STICKER"]]},
+    "self": {"path":"/aweme/v1/web/user/profile/self/", "params":[]},
+    "comment": {"profile":"anonymous_comments", "path":"/aweme/v2/comment/list/", "method":"POST", "form":[["language","zh"]], "params":[["aweme_id","$postId"],["cursor","$cursor"],["count","$count"],["need_chunk","0"],["device_id","$deviceId"]]},
+    "reply": {"profile":"anonymous_comments", "path":"/aweme/v1/comment/list/reply/", "params":[["item_id","$postId"],["comment_id","$parentId"],["cursor","$cursor"],["count","$count"],["device_id","$deviceId"]]},
+    "detail": {"path":"/aweme/v1/web/aweme/detail/", "params":[["aweme_id","$postId"]]}
+  },
+  "request_profiles": {
+    "anonymous_comments": {
+      "anonymous": true,
+      "identity": {"variable":"deviceId", "digits":16},
+      "origin": "https://aweme.snssdk.com",
+      "ua": "com.ss.android.ugc.aweme/400701 (Linux; U; Android 11; zh_CN; MI 9; Build/RKQ1.200826.002; Cronet/TTNetVersion:5.2.3780.14-quic)",
+      "common_query": [
+        ["item_type","0"],["comment_aggregation","0"],["use_url_optimize","0"],
+        ["service_id","0"],["comment_scene","0"],["medium_shrink","239_320"],
+        ["is_change_download_format","false"],["use_light_optimize","0"],
+        ["is_need_reply_list_exposure","0"],["channel","xiaomi_1128_64"],
+        ["aid","1128"],["app_name","aweme"],["version_code","400700"],
+        ["version_name","40.7.0"],["device_platform","android"],["os","android"],
+        ["device_type","MI 9"],["device_brand","Xiaomi"],["language","zh"],
+        ["os_api","30"],["os_version","11"],["manifest_version_code","400701"],
+        ["resolution","1080*2221"],["dpi","440"],["update_version_code","40709900"],
+        ["package","com.ss.android.ugc.aweme"],["cpu_support64","true"],
+        ["host_abi","arm64-v8a"],["need_personal_recommend","1"]
+      ]
+    }
+  },
+  "protected": ["/aweme/v1/web/aweme/detail/","/aweme/v1/web/aweme/post/","/aweme/v1/web/aweme/favorite/","/aweme/v1/web/aweme/listcollection/","/aweme/v1/web/mix/aweme/","/aweme/v1/web/mix/detail/","/aweme/v1/web/mix/list/","/aweme/v1/web/mix/listcollection/","/aweme/v1/web/music/aweme/","/aweme/v1/web/music/list/","/aweme/v1/web/music/detail/","/aweme/v1/web/collects/list/","/aweme/v1/web/collects/video/list/","/aweme/v1/web/tab/feed/"],
+  "common_query": [["device_platform","webapp"],["aid","6383"],["channel","channel_pc_web"],["pc_client_type","1"],["pc_libra_divert","Windows"],["version_code","290100"],["version_name","29.1.0"],["cookie_enabled","true"],["screen_width","1536"],["screen_height","864"],["browser_language","zh-CN"],["browser_platform","Win32"],["browser_name","Chrome"],["browser_version","139.0.0.0"],["browser_online","true"],["engine_name","Blink"],["engine_version","139.0.0.0"],["os_name","Windows"],["os_version","10"],["cpu_core_num","16"],["device_memory","8"],["platform","PC"],["downlink","10"],["effective_type","4g"],["round_trip_time","200"],["support_h265","1"],["support_dash","1"],["update_version_code","170400"]],
+  "count_top": 50, "count_reply": 20, "page_delay_ms": 400, "reply_delay_ms": 250,
+  "limit_top": 2000, "max_pages_top": 200, "max_pages_reply": 20, "max_replies_total": 5000,
+  "identity_path_suffix_regex": "~.*$",
+  "request_timeout_seconds": 15, "max_attempts": 3, "cooldown_recovery_attempts": 1,
+  "cooldown_min_ms": 60000, "cooldown_max_ms": 90000,
+  "max_asset_bytes": 536870912,
+  "download_timeout_seconds": 30, "detail_cache_ms": 120000, "asset_refresh_attempts": 1,
+  "preview_timeout_ms": 8000, "max_preview_bytes": 8388608,
+  "comment_cache_ms": 300000,
+  "favorites": {"page_size":50, "max_pages":200, "cache_ms":300000},
+  "account_works": {"page_size":20, "max_pages":200, "cache_ms":300000},
+  "error_patterns": [{"contains":"Uifid Not Found","code":"NEED_LOGIN"},{"contains":"Signature Not Found","code":"JS_ERROR"}],
+  "business_errors": {}
+}

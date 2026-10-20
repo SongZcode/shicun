@@ -1,0 +1,40 @@
+{
+  "id": "bilibili",
+  "max_asset_bytes":8589934592, "download_idle_timeout_seconds":30, "download_call_timeout_seconds":7200,
+  "origin": "https://api.bilibili.com",
+  "referer": "https://www.bilibili.com/",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "login_url": "https://passport.bilibili.com/h5-app/passport/login",
+  "login_browser": {"ua":"Mozilla/5.0 (Linux; Android 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"},
+  "login_ui": {"ready_timeout_ms":30000, "opening_poll_ms":400, "poll_ms":1000},
+  "cookie_origins": ["https://www.bilibili.com/", "https://passport.bilibili.com/", "https://api.bilibili.com/"],
+  "cookie_domains": [".bilibili.com"],
+  "cookie_names": ["SESSDATA", "bili_jct", "DedeUserID", "DedeUserID__ckMd5", "buvid3", "buvid4"],
+  "session_cookie_names": ["SESSDATA"],
+  "input": {
+    "id_regex": "(?i)^(BV[0-9A-Za-z]{10}|av[0-9]+|ep[0-9]+|ss[0-9]+)$",
+    "url_regex": "https?://(?:www\\.bilibili\\.com|m\\.bilibili\\.com|b23\\.tv)/[^\\s<>]+",
+    "post_regex": "(?i)/video/(BV[0-9A-Za-z]{10}|av[0-9]+)",
+    "pgc_regex": "(?i)^(?:/bangumi/play/|/)(ep[0-9]+|ss[0-9]+)(?:/|$)",
+    "pgc_id_regex": "(?i)^(ep|ss)([0-9]+)$",
+    "hosts": ["www.bilibili.com", "m.bilibili.com", "b23.tv", "bilibili.com"],
+    "page_parameter": "p",
+    "max_redirects": 5
+  },
+  "api": {
+    "detail": {"path": "/x/web-interface/view", "params": [["$idType", "$id"]]},
+    "nav": {"path": "/x/web-interface/nav", "params": []},
+    "play": {"path": "/x/player/wbi/playurl", "params": [["bvid", "$bvid"], ["cid", "$cid"], ["qn", "127"], ["fnval", "4048"], ["fnver", "0"], ["fourk", "1"]]},
+    "season": {"path":"/pgc/view/web/season", "params":[["$idType","$id"]]},
+    "pgcPlay": {"path":"/pgc/player/web/v2/playurl", "params":[["ep_id","$episode"],["fnval","12240"]]},
+    "folders": {"path":"/x/v3/fav/folder/created/list-all", "params":[["up_mid","$accountId"]]},
+    "savedWorks": {"path":"/x/v3/fav/resource/list", "params":[["media_id","$folderId"],["pn","$page"],["ps","$count"],["order","mtime"],["type","0"],["tid","0"],["platform","web"]]},
+    "likedWorks": {"path":"/x/space/like/video", "params":[["vmid","$accountId"]]}
+  },
+  "account_works": {"page_size":20,"max_pages":200,"cache_ms":900000,"page_delay_ms":250,"first_page":"1","video_type":"2"},
+  "pgc": {"episode_parameter":"ep_id","season_parameter":"season_id","whole_states":["PLAY_WHOLE","whole"],"preview_states":["PLAY_PREVIEW","preview"]},
+  "bv_parameter": "bvid", "av_parameter": "aid",
+  "video_codec": 7, "audio_codec_prefix": "mp4a",
+  "mixin_order": [46,47,18,2,53,8,23,32,15,50,10,31,58,3,45,35,27,43,5,49,33,9,42,19,29,28,14,39,12,38,41,13,37,48,7,16,24,55,40,61,26,17,0,1,60,51,30,4,22,25,54,21,56,59,6,63,57,62,11,36,20,34,44,52],
+  "error_codes": {"-404": "NOT_FOUND", "-403": "BLOCKED", "-412": "BLOCKED", "-352": "BLOCKED", "-101": "NEED_LOGIN", "-10403": "UNSUPPORTED"}
+}
